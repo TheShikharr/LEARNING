@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    height: 80px;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+}
+nav a{
+    color: #fff;
+    font-size: 29px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: color 0.4s;
+    /* padding: 5px 21px; */
+    /* border-radius: 9px; */
+    /* border: 2px solid #fff; */
+}
+nav a:hover{
+    color: rgb(77, 3, 25);
+    transition: .4s;
+    
+}
+h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/* form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 100px;
+} */
+.big-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    /* flex-direction: column; */
+    height: calc(100vh - 80px); /* Adjust for nav height */
+    /* border: 2px solid white; */
+    
+}
+.container1{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:400px;
+    width:400px;
+    border-radius: 50px;
+    gap: 10px;
+}
+.container1 h1{
+    padding: 20px;
+}
+
+input{
+    width: 80px;
+    height: 20px;
+
+}
+button{
+    height: 50px;
+    width: 200px;
+    font-family:cursive;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: none;
+    margin: 20px;
+}
+button:hover{
+    background-color: crimson;
+    color:#fff;
+    transition: .3s;
+    cursor: pointer;
+}
+.result{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.guide{
+    border: 2px solid white;
+    height:400px;
+    width:400px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.guide h2{
+    padding: 20px;
+}
+/* .guide p{
+    padding-top:50px;
+} */

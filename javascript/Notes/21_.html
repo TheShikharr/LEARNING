@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .card{
+            height: 250px;
+            width: 200px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 30px;
+            align-items:center ;
+        }
+        .img{
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+
+        }
+        .followers{
+            height: 50px;
+            width: 150px;
+            border: 2px solid black;
+        }
+        button{
+            margin-top:30px;
+            padding: 10px;
+        }
+    </style>
+<!-- <pre>
+    Value       State	            Description
+0	        UNSENT	            Client has been created. open() not called yet.
+1	        OPENED	            open() has been called.
+2	        HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	        LOADING	            Downloading; responseText holds partial data.
+4	        DONE	            The operation is complete.
+</pre> -->
+<div class="card">
+    <img class="img" alt="GitHub Avatar"/>
+    <div class="followers"></div>
+</div>
+<button>click</button>
+</body>
+<script>
+    // const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+    // const xhr = new XMLHttpRequest()
+    // xhr.open('GET', requestUrl)
+
+    // xhr.onreadystatechange = function() {
+    // console.log(xhr.readyState);
+    // if(xhr.readyState === 4) {
+    //     const data = this.responseText
+    //     // const data = JSON.parse(this.responseText)
+    //     console.log(typeof data);
+    //     console.log(data);
+        
+    //     console.log(data.followers);
+        
+    // }
+    // }
+    
+    // xhr.send()
+
+
+        // const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+        // let xhr = new XMLHttpRequest()
+        // xhr.open('GET', requestUrl)        
+
+        // const button = document.querySelector("button")
+        // const img = document.querySelector(".img")
+        // const followers = document.querySelector(".followers")
+
+        // button.addEventListener('click', function(){
+        //     xhr.onreadystatechange = function(){
+        //         console.log(xhr.readyState);
+                
+        //     }
+
+
+        // })
+
+const requestUrl = 'https://api.github.com/users/hiteshchoudhary';
+let xhr = new XMLHttpRequest();
+xhr.open('GET', requestUrl);
+
+const button = document.querySelector("button");
+const img = document.querySelector(".img");
+const followers = document.querySelector(".followers");
+
+button.addEventListener('click', function () {
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText);
+            console.log(data); // Optional: see full user data
+
+            // Set profile image
+            img.src = data.avatar_url;
+
+            // Set followers count
+            followers.textContent = `Followers: ${data.followers}`;
+        }
+    };
+    xhr.send();      // Don't forget to send the request!
+});
+
+
+</script>
+</html>
