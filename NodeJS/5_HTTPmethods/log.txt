@@ -1,5 +1,0 @@
-1769362351350: GET /about?myname=Shikhar&id=2 new req rec
-1769362567837: GET /about?myname=Shikhar&id=2 new req rec
-1769362574680: GET /about?myname=Shikhar&id=2 new req rec
-1769362584291: GET / new req rec
-1769362586104: GET / new req rec
