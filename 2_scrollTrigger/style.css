@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+html, 
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+}
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: crimson;
+    
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(187, 20, 220);
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(20, 220, 80);
+    
+}
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: beige;
+    
+}
+
+h1{
+    font-size: 80vh;
+    text-transform: uppercase;
+    color: beige;
+    margin-left: 10%;
+}
