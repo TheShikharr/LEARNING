@@ -1,4 +1,3 @@
-NodeJS
-node_modules/
-.vscode/
-dist/
+*
+!NodeJS/
+!NodeJS/**
