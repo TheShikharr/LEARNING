@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+background-color: #111;
+}
+
+#string {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(255, 147, 6);
+    display: flex;
+    justify-content: center;
+}
+
+/* svg{
+    background-color:antiquewhite
+} */
