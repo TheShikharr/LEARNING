@@ -54,4 +54,4 @@ client.on("messageCreate", async (message) => {
 //     interaction.reply("pong!!")
 // })
 
-client.login("MTQ3ODMwMTIzNzI1MzM3Mzk5Mg.G-RcGP.wFyWw-ZzjErbsA_pC_TEW0BPlKQ9nHHL_sxoZY")
+client.login(" ")
