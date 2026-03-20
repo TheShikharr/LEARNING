@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    height: 80px;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+}
+nav a{
+    color: #fff;
+    font-size: 29px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: #7e0208; */
+    /* padding: 5px 21px; */
+    /* border-radius: 9px; */
+
+}
+nav a:hover{
+    color: rgb(77, 3, 25);
+    transition: .4s;
+    
+}
+.outer-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 80px);
+    /* border: 2px solid white; */
+}
+.guess-box{
+    /* border: 2px solid white; */
+    height: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 50px;
+}
+p{
+    font-size: 25px;
+    /* padding-top: 50px; */
+}
+#num-box{
+    height: 60px;
+    width: 130px;
+    font-size: 20px;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+}
+.inline{
+    display: flex;
+    gap: 20px;
+}
+button{
+    height: 60px;
+    width: 130px;
+    font-size: 20px;
+    border-radius: 100px;
+    border: none;
+    background-color:gold;
+    border: 2px solid #fff;
+    transition: .2s ease-in-out;
+
+}
+button:hover{
+    background-color: crimson;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+.display-message{
+    margin-top: 30px;
+    font-size: 22px;
+}
+.zero{
+    background-color: #0b0033;
+    color: #fff;
+    padding: 5px 20px;
+    border: 2px solid white;
+    border-radius: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.mfirst{
+    background-color: #d11149;
+    color: #fff;
+    padding: 5px 20px;
+    border: 2px solid white;
+    border-radius: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.first{
+    background-color: rgb(131, 3, 170);
+    color: #fff;
+    padding: 5px 20px;
+    border: 2px solid white;
+    border-radius: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.second{
+    background-color: #14342b;
+    color: #fff;
+    padding: 5px 20px;
+    border: 2px solid white;
+    border-radius: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.third{
+    background-color: rgb(180, 0, 0);
+    color: #fff;
+    padding: 5px 20px;
+    border: 2px solid white;
+    border-radius: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
