@@ -17,8 +17,13 @@ const app = express()
 const PORT = process.env.PORT || 7000
 
 mongoose.connect(process.env.MONGO_URL)
-        .then(() => console.log("MongoDB Connnected"))  
-        .catch((err) => console.log("MongoDB Connection Error: ", err))
+    .then(() => console.log("MongoDB Connnected"))
+    .catch((err) => console.log("MongoDB Connection Error: ", err))
+
+// mongoose.connect("mongodb://127.0.0.1:27017/blogify")
+//         .then(() => console.log("MongoDB Connnected"))  
+//         .catch((err) => console.log("MongoDB Connection Error: ", err))
+
 
 
 app.set("view engine", "ejs")
@@ -35,8 +40,8 @@ app.use(express.static(path.resolve("./public")))
 
 
 
-app.get("/", async(req,res) => {
-    console.log("USER:", req.user)
+app.get("/", async (req, res) => {
+    // console.log("USER:", req.user)
     const allblogs = await Blog.find({})
     res.render("home", {
         user: req.user,

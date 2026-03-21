@@ -2,7 +2,7 @@ const JWT = require("jsonwebtoken")
 
 const secret = "b@|manIIIIII"
 
-function createTokenForUser (user) {
+function createTokenForUser(user) {
     const payload = {
         _id: user._id,
         fullName: user.fullName,
@@ -15,10 +15,10 @@ function createTokenForUser (user) {
     return token
 }
 
-function validateToken (token) {
+function validateToken(token) {
     const payload = JWT.verify(token, secret)
     return payload
-} 
+}
 
 module.exports = {
     createTokenForUser,
