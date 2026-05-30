@@ -8,19 +8,25 @@ function App() {
 
   const addTodo = (title) => {
     setTodos((prev) => [ {id: Date.now(), ...title} , ...prev ])
+
   }
 
   const updateTodo = (id, title) => {
     setTodos((prev) => prev.map( (prevTodo) => (prevTodo.id === id ? title : prevTodo) ))
+
   }
 
   const deleteTodo = (id) => {
+    setTodos((prev) => prev.filter((prevTodo) => (prevTodo.id !== id) ))
 
   }
+
   const toggleChecked = (id) => {
+    setTodos((prev) => prev.map((prevTodo) => prevTodo.id === id ? { ...prevTodo, checked: !prevTodo.checked } : prevTodo ) )
 
   }
 
+  
   return (
     <TodoProvider value={{todos, addTodo, updateTodo, deleteTodo, toggleChecked}}>
       <div className="bg-[#172842] min-h-screen py-8">

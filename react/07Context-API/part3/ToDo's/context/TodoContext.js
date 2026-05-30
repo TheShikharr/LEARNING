@@ -5,7 +5,7 @@ export const TodoContext = createContext({
         {
             id: 1,
             title: "todo mesg",
-            completed: false,
+            checked: false,
         },
     ],
     addTodo: (title) => {},
