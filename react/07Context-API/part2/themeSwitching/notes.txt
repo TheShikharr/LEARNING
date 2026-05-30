@@ -1,0 +1,11 @@
+Tailwind CSS v3 installation
+
+STEP 1.
+npm install -D tailwindcss@3 postcss autoprefixer
+
+STEP 2:
+npx tailwindcss init -p
+
+
+
+

@@ -1,0 +1,14 @@
+STEPS for creating ContextAPI
+
+STEP 1: 
+React.createContext()
+
+STEP 2: 
+Create a ContextProvider file
+
+        <UserContext.Provider value={{user, setUser}}>
+
+            {children}
+            // render all other components that can access UserContext
+
+        </UserContext.Provider>
