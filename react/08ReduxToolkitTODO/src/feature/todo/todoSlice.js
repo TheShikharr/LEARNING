@@ -32,4 +32,4 @@ export const todoSlice = createSlice({
 
 export const { addTodo, removeTodo, updateTodo } = todoSlice.actions
 
-export default todoSlice.reducer
+export default todoSlice.reducer     // you can import it with any name you want.
