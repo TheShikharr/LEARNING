@@ -113,6 +113,3 @@ app.post('/api/users', async (req, res) => {
 
 // server
 app.listen(PORT, () => console.log(`Server Started at PORT: ${PORT}`))
-
-
-
