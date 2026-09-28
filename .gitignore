@@ -2,3 +2,6 @@
 # !NodeJS/
 # !NodeJS/**
 node_modules/
+
+.env
+node_modules/
