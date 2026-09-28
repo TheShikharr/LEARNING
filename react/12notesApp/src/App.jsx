@@ -9,7 +9,7 @@ function App() {
             placeholder="Heading"
             className="px-5 py-3 w-full border-2 rounded font-medium outline-none"
           />
-          <textarea
+          <textarea 
             type="text"
             placeholder="Enter Details"
             className="px-5 py-3 w-full h-32 border-2 rounded font-medium outline-none"
